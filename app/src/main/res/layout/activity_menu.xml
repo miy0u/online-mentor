@@ -33,7 +33,7 @@
         android:layout_marginLeft="1dp"
         android:fontFamily="@font/poppins"
         android:text="Your Name"
-        android:textColor="@color/colorGray"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
