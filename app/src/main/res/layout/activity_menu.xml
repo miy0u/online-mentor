@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="81dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btnex_bg"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Выйти"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewUsername" />
+
+    <TextView
+        android:id="@+id/TextViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="1dp"
+        android:fontFamily="@font/poppins"
+        android:text="Your Name"
+        android:textColor="@color/colorGray"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/online_mentor" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayLight"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/imageViewTest1"
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.066"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/online_mentor"
+                tools:ignore="MissingConstraints"></ImageView>
+
+            <TextView
+                android:id="@+id/textViewTest1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:fontFamily="@font/poppins"
+                android:text="Комплексная проверка"
+                android:textColor="@color/colorGray"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageViewTest1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.183"
+                tools:ignore="MissingConstraints"></TextView>
+
+                <TextView
+                    android:id="@+id/textViewTestFull1"
+                    android:layout_width="188dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Включает в себя все типы тестов, которые подбираются для вас случайным образом."
+                    android:textColor="@color/colorYellow"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest1"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTest1"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <Button
+                    android:id="@+id/buttonTest1"
+                    android:layout_width="105dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/btnex_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Проверить себя"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest1"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTestFull1"
+                    tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrayLight"
+                tools:context=".MainActivity">
+
+                <ImageView
+                    android:id="@+id/imageViewTest2"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.066"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/online_mentor"
+                    tools:ignore="MissingConstraints"></ImageView>
+
+                <TextView
+                    android:id="@+id/textViewTest2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Комплексная проверка"
+                    android:textColor="@color/colorGray"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <TextView
+                    android:id="@+id/textViewTestFull2"
+                    android:layout_width="188dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Включает в себя все типы тестов, которые подбираются для вас случайным образом."
+                    android:textColor="@color/colorYellow"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest2"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTest2"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <Button
+                    android:id="@+id/buttonTest2"
+                    android:layout_width="105dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/btnex_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Проверить себя"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest2"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTestFull2"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrayLight"
+                tools:context=".MainActivity">
+
+                <ImageView
+                    android:id="@+id/imageViewTest3"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.066"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/online_mentor"
+                    tools:ignore="MissingConstraints"></ImageView>
+
+                <TextView
+                    android:id="@+id/textViewTest3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Комплексная проверка"
+                    android:textColor="@color/colorGray"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <TextView
+                    android:id="@+id/textViewTestFull3"
+                    android:layout_width="188dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Включает в себя все типы тестов, которые подбираются для вас случайным образом."
+                    android:textColor="@color/colorYellow"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest3"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTest3"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <Button
+                    android:id="@+id/buttonTest3"
+                    android:layout_width="105dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/btnex_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Проверить себя"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest3"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTestFull3"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrayLight"
+                tools:context=".MainActivity">
+
+                <ImageView
+                    android:id="@+id/imageViewTest4"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.066"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/online_mentor"
+                    tools:ignore="MissingConstraints"></ImageView>
+
+                <TextView
+                    android:id="@+id/textViewTest4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Комплексная проверка"
+                    android:textColor="@color/colorGray"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <TextView
+                    android:id="@+id/textViewTestFull4"
+                    android:layout_width="188dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Включает в себя все типы тестов, которые подбираются для вас случайным образом."
+                    android:textColor="@color/colorYellow"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest4"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTest4"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <Button
+                    android:id="@+id/buttonTest4"
+                    android:layout_width="105dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/btnex_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Проверить себя"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest4"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTestFull4"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrayLight"
+                tools:context=".MainActivity">
+
+                <ImageView
+                    android:id="@+id/imageViewTest5"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.066"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/online_mentor"
+                    tools:ignore="MissingConstraints"></ImageView>
+
+                <TextView
+                    android:id="@+id/textViewTest5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Комплексная проверка"
+                    android:textColor="@color/colorGray"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <TextView
+                    android:id="@+id/textViewTestFull5"
+                    android:layout_width="188dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Включает в себя все типы тестов, которые подбираются для вас случайным образом."
+                    android:textColor="@color/colorYellow"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest5"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTest5"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <Button
+                    android:id="@+id/buttonTest5"
+                    android:layout_width="105dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/btnex_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Проверить себя"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest5"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTestFull5"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
