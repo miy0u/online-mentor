@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -57,7 +56,7 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="118dp"
         android:layout_marginBottom="56dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +73,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrayLight"
+                android:background="@color/colorPrimary"
                 tools:context=".MainActivity">
 
                 <ImageView
@@ -97,7 +96,7 @@
                     android:layout_marginStart="14dp"
                     android:fontFamily="@font/poppins"
                     android:text="Комплексная проверка"
-                    android:textColor="@color/colorGray"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="17dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -126,7 +125,7 @@
                     tools:ignore="MissingConstraints"></TextView>
 
                 <Button
-                    android:id="@+id/buttonTest1"
+                    android:id="@+id/buttonTestKomplex"
                     android:layout_width="105dp"
                     android:layout_height="26dp"
                     android:layout_margin="16dp"
@@ -172,7 +171,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Комплексная проверка"
+                    android:text="Тесты на грамматику"
                     android:textColor="@color/colorGray"
                     android:textSize="17dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -190,7 +189,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginRight="10dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Включает в себя все типы тестов, которые подбираются для вас случайным образом."
+                    android:text="Проверка ваших навыков на правильное построение предложений."
                     android:textColor="@color/colorYellow"
                     android:textSize="13dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -202,7 +201,7 @@
                     tools:ignore="MissingConstraints"></TextView>
 
                 <Button
-                    android:id="@+id/buttonTest2"
+                    android:id="@+id/buttonTestGram"
                     android:layout_width="105dp"
                     android:layout_height="26dp"
                     android:layout_margin="16dp"
@@ -248,7 +247,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Комплексная проверка"
+                    android:text="Тесты с картинками"
                     android:textColor="@color/colorGray"
                     android:textSize="17dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -266,7 +265,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginRight="10dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Включает в себя все типы тестов, которые подбираются для вас случайным образом."
+                    android:text="Включает в себя проверку вашей зрительной памяти и представлений слов."
                     android:textColor="@color/colorYellow"
                     android:textSize="13dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -278,7 +277,7 @@
                     tools:ignore="MissingConstraints"></TextView>
 
                 <Button
-                    android:id="@+id/buttonTest3"
+                    android:id="@+id/buttonTestPicture"
                     android:layout_width="105dp"
                     android:layout_height="26dp"
                     android:layout_margin="16dp"
@@ -324,7 +323,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Комплексная проверка"
+                    android:text="Тесты на знание перевода"
                     android:textColor="@color/colorGray"
                     android:textSize="17dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -342,7 +341,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginRight="10dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Включает в себя все типы тестов, которые подбираются для вас случайным образом."
+                    android:text="Проверяют ваши знания перевода слов, содержащихся в словаре."
                     android:textColor="@color/colorYellow"
                     android:textSize="13dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -354,7 +353,7 @@
                     tools:ignore="MissingConstraints"></TextView>
 
                 <Button
-                    android:id="@+id/buttonTest4"
+                    android:id="@+id/buttonTestTranslate"
                     android:layout_width="105dp"
                     android:layout_height="26dp"
                     android:layout_margin="16dp"
@@ -400,7 +399,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Комплексная проверка"
+                    android:text="Тесты на вставку слов"
                     android:textColor="@color/colorGray"
                     android:textSize="17dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -418,7 +417,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginRight="10dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Включает в себя все типы тестов, которые подбираются для вас случайным образом."
+                    android:text="Проверяют ваши способности правильного подставления слов в предложения."
                     android:textColor="@color/colorYellow"
                     android:textSize="13dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -430,7 +429,7 @@
                     tools:ignore="MissingConstraints"></TextView>
 
                 <Button
-                    android:id="@+id/buttonTest5"
+                    android:id="@+id/buttonTestPut"
                     android:layout_width="105dp"
                     android:layout_height="26dp"
                     android:layout_margin="16dp"
@@ -447,6 +446,158 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toEndOf="@+id/imageViewTest5"
                     app:layout_constraintTop_toBottomOf="@+id/textViewTestFull5"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrayLight"
+                tools:context=".MainActivity">
+
+                <ImageView
+                    android:id="@+id/imageViewTest6"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.066"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/online_mentor"
+                    tools:ignore="MissingConstraints"></ImageView>
+
+                <TextView
+                    android:id="@+id/textViewTest6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Тесты на правописание"
+                    android:textColor="@color/colorGray"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <TextView
+                    android:id="@+id/textViewTestFull6"
+                    android:layout_width="188dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Проверяют ваши знания правильного написания слов."
+                    android:textColor="@color/colorYellow"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest6"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTest6"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <Button
+                    android:id="@+id/buttonTestPrav"
+                    android:layout_width="105dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/btnex_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Проверить себя"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest6"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTestFull6"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrayLight"
+                tools:context=".MainActivity">
+
+                <ImageView
+                    android:id="@+id/imageViewTest7"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.066"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/online_mentor"
+                    tools:ignore="MissingConstraints"></ImageView>
+
+                <TextView
+                    android:id="@+id/textViewTest7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Тесты на смысл текста"
+                    android:textColor="@color/colorGray"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest7"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <TextView
+                    android:id="@+id/textViewTestFull7"
+                    android:layout_width="188dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Оценивают ваше умение правильно подбирать смысл предложенного текста."
+                    android:textColor="@color/colorYellow"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest7"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTest7"
+                    app:layout_constraintVertical_bias="0.183"
+                    tools:ignore="MissingConstraints"></TextView>
+
+                <Button
+                    android:id="@+id/buttonTestSmisl"
+                    android:layout_width="105dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/btnex_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="Проверить себя"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTest7"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTestFull7"
                     tools:ignore="MissingConstraints" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
