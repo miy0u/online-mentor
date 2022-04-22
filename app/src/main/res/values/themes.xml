@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorPurple</item>
+        <item name="android:statusBarColor">@color/colorPurple</item>
         <!-- Customize your theme here. -->
     </style>
 
@@ -12,7 +13,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
     <style name="Theme.Mentor.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Mentor.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
