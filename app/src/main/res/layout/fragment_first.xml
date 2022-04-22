@@ -74,8 +74,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorPrimary"
-                tools:context=".MainActivity">
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary">
 
                 <ImageView
                     android:id="@+id/imageViewTest1"
@@ -150,8 +150,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrayLight"
-                tools:context=".MainActivity">
+                android:background="@color/colorGrayLight">
 
                 <ImageView
                     android:id="@+id/imageViewTest2"
@@ -226,8 +225,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrayLight"
-                tools:context=".MainActivity">
+                android:background="@color/colorGrayLight">
 
                 <ImageView
                     android:id="@+id/imageViewTest3"
@@ -302,8 +300,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrayLight"
-                tools:context=".MainActivity">
+                android:background="@color/colorGrayLight">
 
                 <ImageView
                     android:id="@+id/imageViewTest4"
@@ -378,8 +375,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrayLight"
-                tools:context=".MainActivity">
+                android:background="@color/colorGrayLight">
 
                 <ImageView
                     android:id="@+id/imageViewTest5"
@@ -454,8 +450,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrayLight"
-                tools:context=".MainActivity">
+                android:background="@color/colorGrayLight">
 
                 <ImageView
                     android:id="@+id/imageViewTest6"
@@ -530,8 +525,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorGrayLight"
-                tools:context=".MainActivity">
+                android:background="@color/colorGrayLight">
 
                 <ImageView
                     android:id="@+id/imageViewTest7"

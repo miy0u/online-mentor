@@ -1,5 +1,7 @@
 package com.example.realmentor;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +9,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import java.util.LinkedList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,7 +63,43 @@ public class SecondFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second, container, false);
+        View view = inflater.inflate(R.layout.fragment_second, container, false);
+
+        TextView vocabularyGE = (TextView) view.findViewById(R.id.vocabularyGE_textview);
+        TextView vocabularyRU = (TextView) view.findViewById(R.id.vocabularyRU_textview);
+
+        vocabularyDB db = new vocabularyDB(requireContext());
+        SQLiteDatabase databaseRead = db.getReadableDatabase();
+
+        Cursor cursor = databaseRead.query(vocabularyDB.TABLE_CONSTANTS, null, null, null, null, null, null);
+        if (cursor.moveToFirst()) {//если первый элемент сушествует, то...
+            //создаются индексы, с помощью которых можно будет взять строку
+            int idIndex = cursor.getColumnIndex(vocabularyDB.KEY_ID);
+            int idRussian = cursor.getColumnIndex(vocabularyDB.KEY_RUSSIAN);
+            int idGerman = cursor.getColumnIndex(vocabularyDB.KEY_GERMAN);
+
+            LinkedList<String> ListRU = new LinkedList<>();// создается массив, чтобы можно было сохранить туда данные строки
+            LinkedList<String> ListGE = new LinkedList<>();// создается массив, чтобы можно было сохранить туда данные строки
+            ListRU.add(0, cursor.getString(idRussian));//заполняется первый элемент
+            ListGE.add(0, cursor.getString(idGerman));//заполняется первый элемент
+            int i = 1;//переменная, чтобы можно было перебирать последующие элементы и выводить по одному
+            while (cursor.moveToNext()) {//пока можно перейти на следующий элемент, делаем это...
+                int idIndexNext = cursor.getColumnIndex(vocabularyDB.KEY_ID);
+                int idRussianNext = cursor.getColumnIndex(vocabularyDB.KEY_RUSSIAN);
+                int idGermanNext = cursor.getColumnIndex(vocabularyDB.KEY_GERMAN);
+                ListRU.add(i, cursor.getString(idRussianNext));//заполняются остальные элементы массива
+                ListGE.add(i, cursor.getString(idGermanNext));//заполняется первый элемент
+                i++;
+            }
+            ;
+            for (int j = 0; j < ListRU.size(); j++) {//конструкция, чтобы можно было вывести все элементы, а не только последний
+                vocabularyRU.append(ListRU.get(j) + "\n");
+                vocabularyGE.append(ListGE.get(j) + "\n");
+            }
+            cursor.close();//закрываем и освобождаем память, ОБЯЗАТЕЛЬНО
+
+            db.close();//закрываем базу данных
+        }
+        return view;
     }
 }
