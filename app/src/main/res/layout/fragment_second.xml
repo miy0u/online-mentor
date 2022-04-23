@@ -25,16 +25,15 @@
 
     <TextView
         android:id="@+id/vocTextView2"
-        android:layout_width="262dp"
+        android:layout_width="wrap_content"
         android:layout_height="61dp"
-        android:layout_marginLeft="1dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/poppins"
         android:text="Словарь самых популярных \nслов в немецком языке, которые \nнеобходимо выучить."
         android:textColor="@color/colorPurple"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/vocTextView" />
 
@@ -53,7 +52,7 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="145dp"
+        android:layout_marginTop="140dp"
         android:layout_marginBottom="56dp"
         android:background="@color/colorGrayLight"
         app:layout_constraintBottom_toBottomOf="parent"
